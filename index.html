@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>my favorite keyboards</title>
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      line-height: 1.5;
+      color: #0f172a;
+      background: #f8fafc;
+    }
+    body { margin: 0; padding: 1.5rem; }
+    header, footer { text-align: center; padding: 1rem 0; }
+    .container { max-width: 900px; margin: 0 auto; background: white; padding: 1.25rem; border-radius: 12px; box-shadow: 0 6px 24px rgba(2,6,23,0.06); }
+    h1 { margin: 0 0 .5rem; font-size: 1.75rem; }
+    p.lead { margin-top: 0; color: #334155; }
+    ul.keyboards { display: grid; grid-template-columns: 1fr; gap: 1rem; padding-left: 1.25rem; }
+    @media (min-width:700px) {
+      ul.keyboards { grid-template-columns: repeat(3, 1fr); list-style: none; padding-left: 0; }
+    }
+    li.card { background:#fbfdff; border-radius: 8px; padding: .75rem; box-shadow: 0 2px 8px rgba(2,6,23,0.04); }
+    figure { margin: 0 0 .5rem; }
+    img { width: 100%; height: auto; border-radius: 6px; display:block; }
+    .kbd-title { font-weight: 600; margin: .35rem 0 .25rem; }
+    .small { font-size:.9rem; color:#475569; }
+    footer small { color:#64748b; }
+    a.external { color: #0f62fe; text-decoration: none; }
+    a.external:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>my favorite keyboards</h1>
+      <p class="lead">A short showcase of three Redragon boards I like.</p>
+    </header>
+
+    <main>
+      <ul class="keyboards" aria-label="List of favorite keyboards">
+        <li class="card">
+          <figure>
+            <img src="https://via.placeholder.com/600x350?text=Redragon+K631+Pro+SE+65%25" alt="Redragon K631 Pro SE 65 percent keyboard">
+          </figure>
+          <div>
+            <div class="kbd-title">Redragon K631 Pro SE — 65%</div>
+            <div class="small">Compact layout that keeps arrows and a few nav keys. Great for small desks and portability.</div>
+            <p class="small"><a class="external" href="https://www.redragonshop.com" target="_blank" rel="noopener noreferrer">More from Redragon</a></p>
+          </div>
+        </li>
+
+        <li class="card">
+          <figure>
+            <img src="https://via.placeholder.com/600x350?text=Redragon+K686+Pro+SE+98+Keys" alt="Redragon K686 Pro SE 98 keys keyboard">
+          </figure>
+          <div>
+            <div class="kbd-title">Redragon K686 Pro SE — 98 keys</div>
+            <div class="small">Large layout with near-full functionality in a compact footprint — numeric pad included.</div>
+          </div>
+        </li>
+
+        <li class="card">
+          <figure>
+            <img src="https://via.placeholder.com/600x350?text=Redragon+K530+Draconic" alt="Redragon K530 Draconic keyboard">
+          </figure>
+          <div>
+            <div class="kbd-title">Redragon K530 Draconic</div>
+            <div class="small">Affordable 60% board, good for gaming and tight desk setups.</div>
+          </div>
+        </li>
+      </ul>
+
+      <section aria-labelledby="notes">
+        <h2 id="notes" style="font-size:1.05rem; margin-top:1rem;">Notes</h2>
+        <p class="small">These three keyboards are listed in preference of layout and portability. Replace the placeholder images above with your own images or product photo URLs to make the page production-ready.</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>Made with ❤️ — <a class="external" href="https://www.redragonshop.com" target="_blank" rel="noopener noreferrer">Redragon official site</a></small>
+    </footer>
+  </div>
+</body>
+</html>
